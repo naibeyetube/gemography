@@ -20,6 +20,7 @@ def getlanguage():
     totalRespo=0
     page=1
     listeLanguage=[]
+    
     try:
         while(totalRespo<100):
             url="https://api.github.com/search/repositories?q=created:>{0}&sort=stars&order=desc&per_page=100&page={1}".format(stringDateToday, page)
